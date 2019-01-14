@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+	id="WebApp_ID" version="2.5">
+	
+	<!-- 注册Servlet -->
+	<servlet>
+		<!-- 给servlet起一个名字，并找到它对应的类 -->
+		<servlet-name>hello-servlet</servlet-name>
+		<servlet-class>com.bjpowernode.servlets.HelloServlet</servlet-class>
+		<!-- 设置在web容器启动时就创建servlet实体，3表示优先级，0是最高的优先级 -->
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+	<!-- 建立映射关系 -->
+	<servlet-mapping>
+		<!-- servlet和url的映射关系 -->
+		<!-- 当访问hello-servlet时，需要通过some，即在访问服务器的url后面加一个/some -->
+		<!-- 通过http://localhost:8080/servlet-01/some访问hello-servlet -->
+		<servlet-name>hello-servlet</servlet-name>
+		<url-pattern>/some</url-pattern>
+	</servlet-mapping>
+	
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+</web-app>
