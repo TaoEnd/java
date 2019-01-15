@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+	id="WebApp_ID" version="2.5">
+	
+	<!-- 定义context的初始化参数 -->
+	<context-param>
+		<param-name>context-name</param-name>
+		<param-value>bjpowernode</param-value>
+	</context-param>
+	<context-param>
+		<param-name>address</param-name>
+		<param-value>beijing</param-value>
+	</context-param>
+		
+	<servlet>
+		<servlet-name>hello-servlet-context</servlet-name>
+		<servlet-class>com.bjpowernode.servlets.HelloServletContext</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hello-servlet-context</servlet-name>
+		<url-pattern>/some</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>other-servlet</servlet-name>
+		<servlet-class>com.bjpowernode.servlets.OtherServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>other-servlet</servlet-name>
+		<url-pattern>/other</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+</web-app>

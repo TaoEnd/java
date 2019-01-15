@@ -9,6 +9,15 @@
 		<!-- 给servlet起一个名字，并找到它对应的类 -->
 		<servlet-name>hello-servlet</servlet-name>
 		<servlet-class>com.bjpowernode.servlets.HelloServlet</servlet-class>
+		<!-- 初始化名字和参数 -->
+		<init-param>
+			<param-name>param-name</param-name>
+			<param-value>bjpowernode</param-value>
+		</init-param>
+		<init-param>
+			<param-name>address</param-name>
+			<param-value>beijing</param-value>
+		</init-param>
 		<!-- 设置在web容器启动时就创建servlet实体，3表示优先级，0是最高的优先级 -->
 		<load-on-startup>3</load-on-startup>
 	</servlet>
@@ -21,8 +30,4 @@
 		<url-pattern>/some</url-pattern>
 	</servlet-mapping>
 	
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-  </welcome-file-list>
-  
 </web-app>
