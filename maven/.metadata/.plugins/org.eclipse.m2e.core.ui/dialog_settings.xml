@@ -36,7 +36,6 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="E:\java\Git\java\maven\maven-06"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -49,15 +48,12 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.bjpowenode.maven_web"/>
-			<item value="com.bjpowenode.maven"/>
+			<item value="com.bjpowernode.maven"/>
 		</list>
 		<list key="groupId">
-			<item value="com.bjpowenode.maven"/>
+			<item value="com.bjpowernode.maven"/>
 		</list>
 		<list key="artifactId">
-			<item value="maven-07"/>
-			<item value="maven-06"/>
 			<item value="maven-05"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -70,6 +66,7 @@
 		</list>
 		<list key="version">
 			<item value="1.0.0"/>
+			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
 </section>
