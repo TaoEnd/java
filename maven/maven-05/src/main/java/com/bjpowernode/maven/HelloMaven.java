@@ -1,4 +1,4 @@
-package com.bjpowenode.maven;
+package com.bjpowernode.maven;
 
 public class HelloMaven {
 	
