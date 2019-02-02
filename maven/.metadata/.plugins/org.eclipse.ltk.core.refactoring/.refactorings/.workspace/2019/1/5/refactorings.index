@@ -1,0 +1,5 @@
+1548839599683	Delete resource 'maven-05'
+1548839699828	Delete resource 'maven-05/src/main/java/com/bjpowernode/maven/App.java'
+1548839745983	Delete resource 'maven-05/src/test/java/com/bjpowernode/maven/AppTest.java'
+1548839765484	Delete resource 'maven-05/src/main/java/com/bjpowernode/maven/HelloMavenTest.java'
+1548839802296	Delete resource 'maven-05/src/test/java/com/bjpowernode/maven/HelloMavenTest.java'

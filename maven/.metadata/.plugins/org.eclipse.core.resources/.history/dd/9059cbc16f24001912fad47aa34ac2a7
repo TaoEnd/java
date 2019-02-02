@@ -1,0 +1,7 @@
+package com.bjpowernode.maven;
+
+import junit.framework.TestCase;
+
+public class HelloMavenTest extends TestCase {
+
+}

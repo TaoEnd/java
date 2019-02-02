@@ -1,0 +1,5 @@
+package com.bjpowernode.maven;
+
+public class HelloMaven {
+
+}
