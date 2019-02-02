@@ -36,6 +36,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\java\Git\java\maven\maven-05"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -54,7 +55,7 @@
 			<item value="com.bjpowernode.maven"/>
 		</list>
 		<list key="artifactId">
-			<item value="maven-05"/>
+			<item value="maven-07"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
