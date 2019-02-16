@@ -1,35 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xmlns="http://java.sun.com/xml/ns/javaee" 
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
-	id="WebApp_ID" version="2.5">
-	
-	<!-- 注册Servlet -->
-	<servlet>
-		<!-- 给servlet起一个名字，并找到它对应的类 -->
-		<servlet-name>hello-servlet</servlet-name>
-		<servlet-class>com.bjpowernode.servlets.HelloServlet</servlet-class>
-		<!-- 设置在web容器启动时就创建servlet实体，3表示优先级，0是最高的优先级 -->
-		<load-on-startup>3</load-on-startup>
-	</servlet>
-	<!-- 建立映射关系 -->
-	<servlet-mapping>
-		<!-- servlet和url的映射关系 -->
-		<!-- 当访问hello-servlet时，需要通过some，即在访问服务器的url后面加一个/some -->
-		<!-- 通过http://localhost:8080/servlet-01/some访问hello-servlet -->
-		<servlet-name>hello-servlet</servlet-name>
-		<!-- 一个servlet可以存在多个url与之关联 -->
-		<url-pattern>/some</url-pattern>
-		<url-pattern>/some2</url-pattern>
-		<!-- 也可以使用通配符进行匹配 -->
-		<!-- <url-pattern>/aaa/*</url-pattern> -->
-		<!-- /、/*都是全路径模式，但/*是真正的全路径，可以拦截所有请求，无论是动态请求还是
-			静态请求，/只拦截静态请求，不拦截动态请求，比如.jsp的请求 -->
-		<!-- *.txt：表示可以拦截所有.txt的请求 ，这种模式不能写成/*.txt-->
-	</servlet-mapping>
-	
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <servlet>
+    <servlet-name>hello-servlet</servlet-name>
+    <servlet-class>com.bjpowernode.servlets.HelloServlet</servlet-class>
+    <load-on-startup>3</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello-servlet</servlet-name>
+    <url-pattern>/some</url-pattern>
+    <url-pattern>/some2</url-pattern>
+  </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
-  
+  <servlet>
+    <description></description>
+    <display-name>OtherMethods</display-name>
+    <servlet-name>OtherMethods</servlet-name>
+    <servlet-class>com.bjpowernode.servlet.OtherMethods</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OtherMethods</servlet-name>
+    <url-pattern>/other</url-pattern>
+  </servlet-mapping>
 </web-app>
